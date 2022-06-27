@@ -22,9 +22,9 @@
             alert ("El mensaje no puede estar vacio");
         }
         else {
-            $("#box_msj_propio").append("<div class='foto_propia'></div>");
+            $(".caja_mensajes").append("<div class='foto_propia'></div>");
         
-            $("#box_msj_propio").append("<div class='msj_propio_enviado'>" + texto_mensaje + "</div>");
+            $(".caja_mensajes").append("<div class='msj_propio_enviado'>" + texto_mensaje + "</div>");
         }
 
         
@@ -34,17 +34,17 @@
 
     function msjAjeno () {
         
-        $("#box_msj_ajeno").append("<div class='foto_ajena'></div>");
+        $(".caja_mensajes").append("<div class='foto_ajena'></div>");
 
-        $("#box_msj_ajeno").append("<div class='msj_ajeno'>ACA IRIA EL TEXTO DEL MENSAJE AJENO</div>");
+        $(".caja_mensajes").append("<div class='msj_ajeno'>ACA IRIA EL TEXTO DEL MENSAJE AJENO</div>");
 
     }
 
     function salida_chat () {
-        $("#box_salida_entrada").append("<p class='salida_chat'>User ha salido de este chat</p>");
+        $(".caja_mensajes").append("<p class='salida_chat'>User ha salido de este chat</p>");
     }
 
     
     function entrada_chat () {
-        $("#box_salida_entrada").append("<p class='entrada_chat'>User ha entrado a este chat</p>");
+        $(".caja_mensajes").append("<p class='entrada_chat'>User ha entrado a este chat</p>");
     }
