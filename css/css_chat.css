@@ -15,11 +15,14 @@
 .cabecera_chat {
     background-color: rgb(46, 154, 154);
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
 }
 .cabecera_chat h2 {
     margin: .4rem;
 }
 .cabecera_chat .escribiendo {
+    align-self: center;
 }
 
 .caja_mensajes {
